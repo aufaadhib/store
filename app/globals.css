@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .button-outline{
+        @apply rounded-md border-2 border-primary hover:bg-primary/80 hover:text-black duration-500 py-2 px-6 text-primary tracking-wider;
+    }
+    body {
+        background-color: #fff;
+        color: #000;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      body.dark {
+        background-color: #111111;
+        color: #fff;
+      }
+
+}
+
+
